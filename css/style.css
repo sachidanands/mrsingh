@@ -401,7 +401,7 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
-  min-height: 485px; }
+  min-height: auto; }
   @media (max-width: 1199px) {
     .banner_area {
       min-height: 350px; } }
