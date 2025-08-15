@@ -1,0 +1,78 @@
+/* Custom CSS for Skills Carousel */
+	
+		.skills-carousel-row1 .feature_item,
+		.skills-carousel-row2 .feature_item {
+			text-align: center;
+			padding: 20px;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+			transition: all 0.3s ease;
+			margin: 10px;
+		}
+		
+		.skills-carousel-row1 .feature_item:hover,
+		.skills-carousel-row2 .feature_item:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+		}
+		
+		.skills-carousel-row1 .feature_item img,
+		.skills-carousel-row2 .feature_item img {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 15px;
+		}
+		
+		.skills-carousel-row1 .feature_item h4,
+		.skills-carousel-row2 .feature_item h4 {
+			font-size: 16px;
+			margin: 0;
+			color: #333;
+		}
+		
+		/* Continuous Infinite Loop Carousel */
+		.continuous-carousel {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+		
+		.carousel-track {
+			display: flex;
+			width: max-content;
+			animation-duration: 30s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		
+		.carousel-left .carousel-track {
+			animation-name: scrollLeft;
+		}
+		
+		.carousel-right .carousel-track {
+			animation-name: scrollRight;
+		}
+		
+		@keyframes scrollLeft {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(-50%); }
+		}
+		
+		@keyframes scrollRight {
+			0% { transform: translateX(-50%); }
+			100% { transform: translateX(0); }
+		}
+		
+		/* Pause on hover */
+		.continuous-carousel:hover .carousel-track {
+			animation-play-state: paused;
+		}
+		
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.carousel-track {
+				animation-duration: 20s;
+			}
+		}
+	/* Custom CSS for Skills Carousel */ 

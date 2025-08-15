@@ -404,19 +404,19 @@ button:focus {
   min-height: auto; }
   @media (max-width: 1199px) {
     .banner_area {
-      min-height: 350px; } }
+      min-height: 200px; } }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     background: url(../img/banner/common-banner.png) no-repeat right bottom;
-    background-size: 90% 85%;
-    width: 98%;
+    background-size: 100% 85%;
+    width: auto%;
     z-index: 1; }
     @media (max-width: 1199px) {
       .banner_area .banner_inner {
-        min-height: 350px; } }
+        min-height: 200px; } }
     @media (max-width: 991px) {
       .banner_area .banner_inner {
         background: #854fee;
@@ -427,7 +427,7 @@ button:focus {
       @media (max-width: 991px) {
         .banner_area .banner_inner .banner_content {
           margin-left: 0px;
-          margin-top: 50px; } }
+          margin-top: 100px; } }
       .banner_area .banner_inner .banner_content h2 {
         color: #fff;
         font-size: 50px;
@@ -458,10 +458,27 @@ button:focus {
           margin-right: 0px; }
           .banner_area .banner_inner .banner_content .page_link a:last-child:before {
             display: none; }
+            
 
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
+/* Page Title Area css Start */
+
+.section_gap_page_title {
+  padding-top: 65px;
+  padding-bottom: 170px; }
+
+/* Page Title Area css End */
+
+
+/* Job Profile area css
+============================================================================================ */
+
+/* End of Job Profile area css
+============================================================================================ */
+
 /*----------------------------------------------------*/
 /* Latest Blog Area css
 ============================================================================================ */
@@ -2708,7 +2725,7 @@ h6 {
   margin-top: 50px; }
   .portfolio_details_inner .portfolio_right_text h4 {
     font-size: 20px;
-    margin-bottom: 18px; }
+    margin-bottom: 1px; }
   .portfolio_details_inner .portfolio_right_text p {
     margin-bottom: 25px;
     font-size: 14px; }
@@ -3303,3 +3320,4 @@ h6 {
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
