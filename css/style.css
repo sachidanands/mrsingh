@@ -470,6 +470,29 @@ button:focus {
   padding-top: 65px;
   padding-bottom: 170px; }
 
+  .text-uppercase { text-transform: uppercase; }
+  .reg {
+    font-size: 0.6em;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+  }
+
+  .Job_Profile_area_bullet_points li {
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+  
+  .Job_Profile_area_bullet_points .form-check-input {
+    margin-left: -20px;
+  }
+  
+  .Job_Profile_area_bullet_points h6 {
+    margin-left: 15px;
+  }
+  
+
+
 /* Page Title Area css End */
 
 
@@ -2743,7 +2766,7 @@ h6 {
     .portfolio_details_inner .portfolio_right_text .list li:last-child {
       margin-bottom: 0px; }
     .portfolio_details_inner .portfolio_right_text .list li i {
-      color: #f1cd09; }
+      color: #070707; }
 
 /* End Portfolio Area css
 ============================================================================================ */
