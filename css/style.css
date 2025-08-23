@@ -3344,3 +3344,231 @@ h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 
+/* Start Skill Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+
+#certifications {
+  padding: 48px 0;
+}
+
+#certifications .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+#certifications h2 {
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.cert-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.cert-card:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.cert-badge {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.cert-name {
+  font-size: 1.05rem;
+  margin: 0 0 2px;
+}
+
+.cert-issuer {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.cert-meta {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 14px;
+}
+
+.cert-meta li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.cert-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-verify, .btn-outline {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #0a66c2;
+}
+
+.btn-verify {
+  background: #0a66c2;
+  color: #fff;
+}
+
+.btn-verify:hover {
+  background: #0b5bb0;
+}
+
+.btn-outline {
+  color: #0a66c2;
+  background: #f5f9ff;
+}
+
+.btn-outline:hover {
+  background: #eaf3ff;
+}
+
+
+/* Modal base */
+.pdf-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.pdf-modal[aria-hidden="false"] {
+  display: block;
+}
+
+.pdf-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.pdf-modal__dialog {
+  position: relative;
+  background: #fff;
+  width: min(1000px, 92vw);
+  height: min(85vh, 92vh);
+  margin: 5vh auto 0;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header and actions */
+.pdf-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.pdf-modal__title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.pdf-modal__actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Body and iframe */
+.pdf-modal__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pdf-frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #f7f7f7;
+}
+
+/* Fallback UI */
+.pdf-fallback {
+  padding: 20px;
+}
+
+.pdf-fallback__actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons (reuse your palette if you like) */
+.pdf-btn {
+  appearance: none;
+  border: 1px solid #0a66c2;
+  background: #f5f9ff;
+  color: #0a66c2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pdf-btn:hover {
+  background: #eaf3ff;
+}
+
+.pdf-btn--primary {
+  background: #0a66c2;
+  color: #fff;
+}
+
+.pdf-btn--primary:hover {
+  background: #0b5bb0;
+}
+
+/* Small screens */
+@media (max-width: 560px) {
+  .pdf-modal__dialog {
+    width: 96vw;
+    height: 90vh;
+    margin-top: 4vh;
+    border-radius: 8px;
+  }
+
+  .pdf-modal__title {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* End Skill Area css
+============================================================================================ */
+/*---------------------------------------------------- */
