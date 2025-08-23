@@ -73,7 +73,9 @@
 							<h1 class="text-uppercase">I am Sachidanand</h1>
 							<h5 class="text-uppercase">senior Product owner/Manager</h5>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Hire Me</span></a>
+
+								<a class="primary_btn" href=" href="mailto:sachidanand01@yahoo.com?subject=Hiring%20for%20[Role]%20-%20Intro&body=Hi%20Sachchidanand%2C%0A%0AI%E2%80%99m%20interested%20in%20hiring%20you%20for%3A%20%5BRole%2FProject%5D%0ATimeline%3A%20%5BImmediate%20%2F%201%E2%80%933%20months%20%2F%20Exploring%5D%0ABudget%20(optional)%3A%20%5B%E2%82%B9%20%2F%20%24%5D%0A%0AHappy%20to%20connect.%0A%0AThanks%2C%0A%5BName%5D%0A%5BCompany%5D%0A%5BPhone%5D"> <span>Email Me</span></a>
+
 								<a class="primary_btn tr-bg" href="img/Product-Owner-Sachin.pdf" download="Product-Owner-Sachin.pdf"><span>Get CV</span></a>
 							</div>
 						</div>
@@ -326,20 +328,86 @@
 	<!--================Footer Area =================-->
 	<footer class="footer_area">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
+			<div class="row">
+				<!-- Identity Column -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="footer_identity">
+						<div class="footer_logo mb-3">
 							<a href="#">
-								<img src="img/logo.png" alt="">
+								<img src="img/logo.png" alt="Sachchidanand Singh">
 							</a>
-							<h4>Follow Me</h4>
 						</div>
-						<div class="footer_social">
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-whatsapp"></i></a>
-							<a href="#"><i class="fa fa-internet-explorer"></i></a>
+						<h4 class="footer_title">Sachchidanand Singh</h4>
+						<p class="footer_subtitle">Senior Software Engineer · Full Stack Developer</p>
+						<ul class="footer_meta">
+							<li><i class="fa fa-map-marker"></i> Based in: Mumbai, IST (UTC+5:30)</li>
+							<li><i class="fa fa-clock-o"></i> Availability: Open to Full-time/Contract</li>
+							<li><i class="fa fa-reply"></i> Response: < 24 hours</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Quick Links Column -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="footer_links">
+						<h4 class="footer_heading">Quick Links</h4>
+						<ul class="footer_nav">
+							<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+							<li><a href="about.html"><i class="fa fa-user"></i> About</a></li>
+							<li><a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a></li>
+							<li><a href="skills.html"><i class="fa fa-star"></i> Skills</a></li>
+							<li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Contact Details Column -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="footer_contact">
+						<h4 class="footer_heading">Contact Details</h4>
+						<div class="contact_info">
+							<p><i class="fa fa-envelope"></i> <a href="mailto:contact@sachchidanand.com">contact@sachchidanand.com</a></p>
+							<p><i class="fa fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+							<p><i class="fa fa-map-marker"></i> Mumbai, Maharashtra, India</p>
+						</div>
+						
+						<!-- Social Links -->
+						<div class="footer_social mt-3">
+							<h5 class="social_heading">Follow Me</h5>
+							<div class="social_icons">
+								<a href="https://github.com/your-handle" target="_blank" aria-label="GitHub">
+									<i class="fa fa-github"></i>
+									<span>GitHub</span>
+								</a>
+								<a href="https://linkedin.com/in/your-handle" target="_blank" aria-label="LinkedIn">
+									<i class="fa fa-linkedin"></i>
+									<span>LinkedIn</span>
+								</a>
+								<a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
+									<i class="fa fa-whatsapp"></i>
+									<span>WhatsApp</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer Bottom - Legal Section -->
+			<div class="footer_bottom">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<div class="copyright">
+							<p>&copy; <span id="currentYear"></span> Sachchidanand Singh. All rights reserved.</p>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="footer_legal">
+							<ul class="legal_links">
+								<li><a href="sitemap.xml">Sitemap</a></li>
+								<li><a href="privacy.html">Privacy Policy</a></li>
+								<li><a href="terms.html">Terms of Service</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -347,6 +415,8 @@
 		</div>
 	</footer>
 	<!--================End Footer Area =================-->
+
+
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -368,6 +438,14 @@
 		$(document).ready(function() {
 			// The continuous animation is handled by CSS
 			// No JavaScript needed for the infinite loop carousel
+		});
+	</script>
+	
+	<!-- Footer Script -->
+	<script>
+		$(document).ready(function() {
+			// Update current year in copyright
+			$('#currentYear').text(new Date().getFullYear());
 		});
 	</script>
 </body>
