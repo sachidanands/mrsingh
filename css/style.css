@@ -3048,7 +3048,7 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 80px !important;
+    padding-top: 80px ;
     padding-bottom: 80px !important;
     background-image: none !important;
     background-color: #04091e !important;
@@ -3192,6 +3192,9 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
   .footer_area .social_icons a {
@@ -3204,6 +3207,7 @@ h6 {
     padding: 10px;
     border-radius: 8px;
     min-width: 60px;
+    list-style: none;
   }
   
   .footer_area .social_icons a:hover {
@@ -3220,6 +3224,7 @@ h6 {
     font-size: 11px;
     text-align: center;
   }
+
   
   .footer_area .footer_bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -3284,7 +3289,7 @@ h6 {
   display: flex;
   align-items: center;
   gap: 14px;           /* space between links */
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;     /* wrap only when space is tight (mobile) */
@@ -3563,17 +3568,16 @@ h6 {
     .footer_area {
       padding: 60px 0; } }
   .footer_area .footer_logo {
-    text-align: center; }
+    text-align: left; }
     .footer_area .footer_logo h4 {
       font-size: 20px;
       color: #000000;
       margin-top: 35px;
       text-transform: uppercase; }
   .footer_area .footer_social {
-    text-align: center;
     margin: 25px 0px 30px; }
     .footer_area .footer_social a {
-      padding: 0 20px; }
+      padding-right: 15px; }
       .footer_area .footer_social a i {
         color: #788489;
         font-size: 22px;
@@ -3704,6 +3708,13 @@ h6 {
 
 
 
-/* End Skill Area css
-============================================================================================ */
+/* ================================== End Skill Area css  ================================== */
 /*---------------------------------------------------- */
+
+
+/* ================================== SiteMap Area css Start ================================== */
+
+
+
+
+/* ================================== SiteMap Area css End ================================== */

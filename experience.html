@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experience | Sachchidanand Singh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fa;
+      color: #222;
+    }
+    main {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 0 16px 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #2053d1;
+      margin-bottom: 32px;
+      font-size: 2rem;
+    }
+    .experience-tile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 24px 24px;
+      box-shadow: 0 4px 15px rgba(40, 60, 120, 0.1);
+      margin-bottom: 24px;
+      transition: box-shadow 0.3s ease;
+    }
+    .experience-tile:hover {
+      box-shadow: 0 6px 24px rgba(40, 60, 120, 0.15);
+    }
+
+    /* Learn More button container & button */
+    .tile-header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+    }
+    .learn-more-btn {
+      background-color: #2a66ff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .learn-more-btn:hover,
+    .learn-more-btn:focus {
+      background-color: #2153d1;
+      outline: none;
+    }
+
+    /* Main content inside tile */
+    .tile-content {
+      display: flex;
+      align-items: center;
+    }
+    .company-logo {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      background: #ddd;
+      border-radius: 12px;
+      object-fit: contain;
+      margin-right: 24px;
+      box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+    }
+    .experience-content {
+      flex: 1;
+    }
+    .company-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 6px 0;
+      color: #134086;
+    }
+    .job-desc {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #444;
+    }
+    .job-duration {
+      font-size: 0.9rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    /* Responsive: stack content vertically on narrow screens */
+    @media (max-width: 600px) {
+      .tile-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .company-logo {
+        margin-bottom: 12px;
+        margin-right: 0;
+        width: 60px;
+        height: 60px;
+      }
+      .company-name {
+        font-size: 1.1rem;
+      }
+      .job-desc {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>My Experience</h1>
+
+    <article class="experience-tile">
+    
+      <div class="tile-content">
+        <img src="images/company1-logo.png" alt="Company 1 Logo" class="company-logo" />
+        <div class="experience-content">
+          <h2 class="company-name">Company 1</h2>
+          <p class="job-desc">Worked as a Software Engineer developing scalable web applications and leading the frontend team to deliver a modern UI.</p>
+          <p class="job-duration">Jun 2020 - Dec 2022</p>
+		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="experience-tile">
+      
+      <div class="tile-content">
+        <img src="images/company2-logo.png" alt="Company 2 Logo" class="company-logo" />
+        <div class="experience-content">
+          <h2 class="company-name">Company 2</h2>
+          <p class="job-desc">Contributed to backend API development, performance optimizations, and maintenance of critical services serving millions of users.</p>
+          <p class="job-duration">Jan 2018 - May 2020</p>
+		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="experience-tile">
+  
+      <div class="tile-content">
+        <img src="images/company3-logo.png" alt="Company 3 Logo" class="company-logo" />
+        <div class="experience-content">
+          <h2 class="company-name">Company 3</h2>
+          <p class="job-desc">Led a small team of developers building mobile applications using React Native and introduced Agile workflows.</p>
+          <p class="job-duration">Aug 2015 - Dec 2017</p>
+		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="experience-tile">
+    
+      <div class="tile-content">
+        <img src="images/company4-logo.png" alt="Company 4 Logo" class="company-logo" />
+        <div class="experience-content">
+          <h2 class="company-name">Company 4</h2>
+          <p class="job-desc">Full-stack developer involved in features development, debugging, and integrating third-party services as per customer needs.</p>
+          <p class="job-duration">Mar 2013 - Jul 2015</p>
+		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="experience-tile">
+    
+      <div class="tile-content">
+        <img src="images/company5-logo.png" alt="Company 5 Logo" class="company-logo" />
+        <div class="experience-content">
+          <h2 class="company-name">Company 5</h2>
+          <p class="job-desc">Started career as a junior developer and gradually took ownership of several key modules within product development.</p>
+          <p class="job-duration">Jan 2011 - Feb 2013</p>
+		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
