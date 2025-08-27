@@ -3730,11 +3730,12 @@ h6 {
   padding: 16px 24px 24px;
   box-shadow: 0 4px 15px rgba(40, 60, 120, 0.1);
   margin-bottom: 24px;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .experience-tile:hover {
   box-shadow: 0 6px 24px rgba(40, 60, 120, 0.15);
+  transform: translateY(-3px);
 }
 
 /* Learn More button container & button */
@@ -3747,18 +3748,26 @@ h6 {
 .learn-more-btn {
   background-color: #2a66ff;
   color: white;
-  border: none;
+  border: 2px solid transparent;
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #2a66ff 0%, #1a4db3 100%);
+  box-shadow: 0 4px 15px rgba(42, 102, 255, 0.3);
 }
 
 .learn-more-btn:hover,
 .learn-more-btn:focus {
-  background-color: #2153d1;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  border: 2px solid #2a66ff;
+  color: #2a66ff;
+  box-shadow: 0 6px 20px rgba(42, 102, 255, 0.4);
+  transform: translateY(-2px);
   outline: none;
 }
 
