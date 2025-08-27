@@ -31,6 +31,7 @@
 
     // Show modal
     modal.setAttribute('aria-hidden', 'false');
+    modal.style.display = 'flex';
 
     // Focus first button in header for accessibility
     setTimeout(() => {
@@ -41,6 +42,7 @@
   // Utility: close modal and cleanup
   function closePdfModal() {
     modal.setAttribute('aria-hidden', 'true');
+    modal.style.display = 'none';
 
     // Unload the PDF to stop network/CPU usage
     iframe.src = 'about:blank';
@@ -68,7 +70,7 @@
 
   // Esc to close
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
       closePdfModal();
     }
   });
@@ -96,7 +98,7 @@
     // If load event doesn't fire within 3s, show fallback
     loadTimeout = setTimeout(() => {
       // If modal still open and iframe still pointing at pdfUrl
-      if (modal.getAttribute('aria-hidden') === 'false' && iframe.src && iframe.src !== 'about:blank') {
+      if (modal.style.display === 'flex' && iframe.src && iframe.src !== 'about:blank') {
         fallback.hidden = false;
       }
     }, 3000);
