@@ -1,190 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
   <title>Experience | Sachchidanand Singh</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f9fa;
-      color: #222;
-    }
-    main {
-      max-width: 960px;
-      margin: 32px auto;
-      padding: 0 16px 40px;
-    }
-    h1 {
-      text-align: center;
-      color: #2053d1;
-      margin-bottom: 32px;
-      font-size: 2rem;
-    }
-    .experience-tile {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background: #fff;
-      border-radius: 12px;
-      padding: 16px 24px 24px;
-      box-shadow: 0 4px 15px rgba(40, 60, 120, 0.1);
-      margin-bottom: 24px;
-      transition: box-shadow 0.3s ease;
-    }
-    .experience-tile:hover {
-      box-shadow: 0 6px 24px rgba(40, 60, 120, 0.15);
-    }
-
-    /* Learn More button container & button */
-    .tile-header {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 12px;
-    }
-    .learn-more-btn {
-      background-color: #2a66ff;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    .learn-more-btn:hover,
-    .learn-more-btn:focus {
-      background-color: #2153d1;
-      outline: none;
-    }
-
-    /* Main content inside tile */
-    .tile-content {
-      display: flex;
-      align-items: center;
-    }
-    .company-logo {
-      flex-shrink: 0;
-      width: 80px;
-      height: 80px;
-      background: #ddd;
-      border-radius: 12px;
-      object-fit: contain;
-      margin-right: 24px;
-      box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
-    }
-    .experience-content {
-      flex: 1;
-    }
-    .company-name {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 0 0 6px 0;
-      color: #134086;
-    }
-    .job-desc {
-      margin: 0 0 8px 0;
-      font-size: 1rem;
-      line-height: 1.4;
-      color: #444;
-    }
-    .job-duration {
-      font-size: 0.9rem;
-      color: #777;
-      font-style: italic;
-    }
-
-    /* Responsive: stack content vertically on narrow screens */
-    @media (max-width: 600px) {
-      .tile-content {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .company-logo {
-        margin-bottom: 12px;
-        margin-right: 0;
-        width: 60px;
-        height: 60px;
-      }
-      .company-name {
-        font-size: 1.1rem;
-      }
-      .job-desc {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>My Experience</h1>
-
-    <article class="experience-tile">
-    
-      <div class="tile-content">
-        <img src="images/company1-logo.png" alt="Company 1 Logo" class="company-logo" />
-        <div class="experience-content">
-          <h2 class="company-name">Company 1</h2>
-          <p class="job-desc">Worked as a Software Engineer developing scalable web applications and leading the frontend team to deliver a modern UI.</p>
-          <p class="job-duration">Jun 2020 - Dec 2022</p>
-		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="experience-tile">
-      
-      <div class="tile-content">
-        <img src="images/company2-logo.png" alt="Company 2 Logo" class="company-logo" />
-        <div class="experience-content">
-          <h2 class="company-name">Company 2</h2>
-          <p class="job-desc">Contributed to backend API development, performance optimizations, and maintenance of critical services serving millions of users.</p>
-          <p class="job-duration">Jan 2018 - May 2020</p>
-		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="experience-tile">
+  <meta name="description" content="Professional Experience: A comprehensive overview of Sachidanand Singh's work experience and career journey.">
   
-      <div class="tile-content">
-        <img src="images/company3-logo.png" alt="Company 3 Logo" class="company-logo" />
-        <div class="experience-content">
-          <h2 class="company-name">Company 3</h2>
-          <p class="job-desc">Led a small team of developers building mobile applications using React Native and introduced Agile workflows.</p>
-          <p class="job-duration">Aug 2015 - Dec 2017</p>
-		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
-        </div>
-      </div>
-    </article>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <article class="experience-tile">
-    
-      <div class="tile-content">
-        <img src="images/company4-logo.png" alt="Company 4 Logo" class="company-logo" />
-        <div class="experience-content">
-          <h2 class="company-name">Company 4</h2>
-          <p class="job-desc">Full-stack developer involved in features development, debugging, and integrating third-party services as per customer needs.</p>
-          <p class="job-duration">Mar 2013 - Jul 2015</p>
-		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+<body>
+  <!--================ Start Header Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                 aria-expanded="false">Experience</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="neighborly.html">Neighborly</a></li>
+                  <li class="nav-item"><a class="nav-link" href="zapcom.html">Zapcom</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tata-play.html">Tata Play</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tata-business-support-services.html">TBSS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="nh-infomedia.html">NH Infomedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </article>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Area =================-->
 
-    <article class="experience-tile">
-    
-      <div class="tile-content">
-        <img src="images/company5-logo.png" alt="Company 5 Logo" class="company-logo" />
-        <div class="experience-content">
-          <h2 class="company-name">Company 5</h2>
-          <p class="job-desc">Started career as a junior developer and gradually took ownership of several key modules within product development.</p>
-          <p class="job-duration">Jan 2011 - Feb 2013</p>
-		  <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="container">
+        <div class="banner_content text-center">
+          <h2>My Experience</h2>
         </div>
       </div>
-    </article>
-  </main>
+    </div>
+  </section>
+  <!--================ End Banner Area =================-->
+
+  <!-- ======= Start of Experience Area ============== -->
+  <section id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <h2 id="experience-title">My Experience</h2>
+      
+      <article class="experience-tile">
+        <div class="tile-content">
+          <img src="img/brands/nblylogo.png" alt="Neighborly Logo" class="company-logo" />
+          <div class="experience-content">
+            <h3 class="company-name">Neighborly</h3>
+            <p class="job-desc">Worked as a Software Engineer developing scalable web applications and leading the frontend team to deliver a modern UI.</p>
+            <p class="job-duration">Jun 2020 - Dec 2022</p>
+            <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-tile">
+        <div class="tile-content">
+          <img src="img/brands/logo4.png" alt="Zapcom Logo" class="company-logo" />
+          <div class="experience-content">
+            <h3 class="company-name">Zapcom</h3>
+            <p class="job-desc">Contributed to backend API development, performance optimizations, and maintenance of critical services serving millions of users.</p>
+            <p class="job-duration">Jan 2018 - May 2020</p>
+            <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-tile">
+        <div class="tile-content">
+          <img src="img/brands/logo1.png" alt="Tata Play Logo" class="company-logo" />
+          <div class="experience-content">
+            <h3 class="company-name">Tata Play</h3>
+            <p class="job-desc">Full-stack developer involved in features development, debugging, and integrating third-party services as per customer needs.</p>
+            <p class="job-duration">Mar 2013 - Jul 2015</p>
+            <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-tile">
+        <div class="tile-content">
+          <img src="img/brands/logo3.png" alt="Tata Business Support Services Logo" class="company-logo" />
+          <div class="experience-content">
+            <h3 class="company-name">Tata Business Support Services</h3>
+            <p class="job-desc">Led a small team of developers building mobile applications using React Native and introduced Agile workflows.</p>
+            <p class="job-duration">Aug 2015 - Dec 2017</p>
+            <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-tile">
+        <div class="tile-content">
+          <img src="img/brands/logo2.png" alt="NH Infomedia Logo" class="company-logo" />
+          <div class="experience-content">
+            <h3 class="company-name">NH Infomedia</h3>
+            <p class="job-desc">Started career as a junior developer and gradually took ownership of several key modules within product development.</p>
+            <p class="job-duration">Jan 2011 - Feb 2013</p>
+            <a href="company1.html" class="learn-more-btn" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- ======= End of Experience Area ============== -->
+
+  <!--================Footer Area =================-->
+  <footer class="footer_area">
+    <div class="container">
+      <div class="row">
+        <!-- Identity Column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer_identity">
+            <div class="footer_logo mb-3">
+              <a href="#">
+                <img src="img/logo.png" alt="Sachchidanand Singh">
+              </a>
+            </div>
+            <h4 class="footer_title">Sachidanand Singh</h4>
+            <p class="footer_subtitle">Senior Product Manager</p>
+            <div class="footer_meta">
+              <p><i class="fa fa-map-marker"></i> Based in: Bangalore, IST (UTC+5:30)</p>
+              <p><i class="fa fa-clock-o"></i> Availability: Open to Full-time/Contract</p>
+              <p><i class="fa fa-reply"></i> Response: < 24 hours</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Quick Links Column -->
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="footer_links">
+            <h4 class="footer_heading">Quick Links</h4>
+            <div class="footer_nav">
+              <p><a href="index.html"><i class="fa fa-home"></i> Home</a></p>
+              <p><a href="about.html"><i class="fa fa-user"></i> About</a></p>
+              <p><a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a></p>
+              <p><a href="skills.html"><i class="fa fa-star"></i> Skills</a></p>
+              <p><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></p>
+              <p><a href="Sitemap.html"><i class="fa fa-envelope"></i> Sitemap</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer_contact">
+            <h4 class="footer_heading">Contact Details</h4>
+            <div class="contact_info">
+              <p><i class="fa fa-envelope"></i> <a href="mailto:contact@sachchidanand.com">sachidanand01@yahoo.com</a></p>
+              <p><i class="fa fa-phone"></i> <a href="tel:+919876543210">+91 99451 21727</a></p>
+              <p><i class="fa fa-map-marker"></i> Bangalore, Karnataka, India</p>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="footer_social mt-3">
+              <h5 class="social_heading">Follow Me</h5>
+              <div class="social_icons">
+                <a href="https://github.com/your-handle" target="_blank" aria-label="GitHub">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/your-handle" target="_blank" aria-label="LinkedIn">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom - Legal Section -->
+      <div class="footer_bottom">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <div class="copyright">
+              <p>&copy; <span id="currentYear"></span> Sachidanand Singh. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================End Footer Area =================-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+  
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

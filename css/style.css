@@ -3718,3 +3718,110 @@ h6 {
 
 
 /* ================================== SiteMap Area css End ================================== */
+
+/* ================================== Experience Area css Start ================================== */
+
+.experience-tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 24px 24px;
+  box-shadow: 0 4px 15px rgba(40, 60, 120, 0.1);
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s ease;
+}
+
+.experience-tile:hover {
+  box-shadow: 0 6px 24px rgba(40, 60, 120, 0.15);
+}
+
+/* Learn More button container & button */
+.tile-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.learn-more-btn {
+  background-color: #2a66ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more-btn:hover,
+.learn-more-btn:focus {
+  background-color: #2153d1;
+  outline: none;
+}
+
+/* Main content inside tile */
+.tile-content {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin-right: 24px;
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #134086;
+}
+
+.job-desc {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+.job-duration {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive: stack content vertically on narrow screens */
+@media (max-width: 600px) {
+  .tile-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .company-logo {
+    margin-bottom: 12px;
+    margin-right: 0;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .company-name {
+    font-size: 1.1rem;
+  }
+  
+  .job-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* ================================== Experience Area css End ================================== */
