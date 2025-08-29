@@ -3491,6 +3491,7 @@ h6 {
 
   .news_widget {
     padding-left: 0 !important; }
+    
 
   /* End End Footer Area css
   ============================================================================================ */
@@ -3596,6 +3597,20 @@ h6 {
       margin-bottom: 0; }
     .footer_area .footer_bottom a {
       color: #854fee; }
+
+
+      .footer_area a {
+        color: inherit;           /* Keep default text/link color */
+        text-decoration: none;    /* No underline by default */
+        transition: color 0.3s ease;
+      }
+      
+      .footer_area a:hover,
+      .footer_area a:focus {
+        color: #2a66ff;           /* Accent color on hover/focus */
+        text-decoration: underline; /* Optional underline on hover */
+      }
+      
 
 /* End Footer Area css
 ============================================================================================ */
