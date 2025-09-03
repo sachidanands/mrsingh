@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.if0_39844794 }}
           password: ${{ secrets.fwKWZ1WIjC }}
           local-dir: ./ # Root directory of your project
-          server-dir: /yourdomain.com/htdocs/ # Your target directory on InfinityFree
+          server-dir: /sachidanand.online/htdocs/ # Your target directory on InfinityFree
