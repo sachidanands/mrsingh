@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./ # Root directory of your project
-          server-dir: /sachidanand.online/htdocs/ # Your target directory on InfinityFree
+          server-dir: /sachidanand.online/htdocs/ # Your target directory of InfinityFree
