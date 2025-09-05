@@ -17,7 +17,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ftpupload.net # Your FTP server
-          username: ${{ secrets.if0_39844794 }}
-          password: ${{ secrets.fwKWZ1WIjC }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./ # Root directory of your project
           server-dir: /sachidanand.online/htdocs/ # Your target directory on InfinityFree
