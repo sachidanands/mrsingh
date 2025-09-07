@@ -1,5 +1,14 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
+
+# Skip existing files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Skip rewrites for static asset files (css, js, images)
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg)$
+
+# Your existing rules below
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
 RewriteCond %{REQUEST_FILENAME} !-f
